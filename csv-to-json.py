@@ -7,9 +7,9 @@ import os
 COPYWRITE = ["CC BY-NC 4.0 Attribution-NonCommercial 4.0 International"]
 
 # Properties: id, name, description, image, animation_url, external_url
-# TRAITS: "edition", "target", "focus", "power_rating", "occurrence", "rarity"
+# TRAITS: "edition", "country", "target", "focus", "power_rating", "occurrence", "rarity"
 
-TRAITS = ["edition", "target", "focus", "power_rating", "occurrence", "rarity"]
+TRAITS = ["edition", "country", "target", "focus", "power_rating", "occurrence", "rarity"]
 
 def display_type(csv_header):
   """Determines the display type of a CSV column header.

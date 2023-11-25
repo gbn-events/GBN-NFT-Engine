@@ -26,7 +26,7 @@ sed -i 's/xxxxxx\//XXXXXX/g' template-html.html
 sed -i 's/<img decoding=async src="data:image\/webp;base64,UklGR.* height=467>/<img src="XXXXXXimage_htmlXXXXXX" alt="NFT Image">/g' template-html.html
 
 # add internal comment
-sed -i 's/Page saved with SingleFile/card_group_lookup: XXXXXXcard_group_lookupXXXXXX \n geocords: XXXXXXgeocordsXXXXXX \n event_id: XXXXXXevent_idXXXXXX \n color_bkgd_hex: XXXXXXcolor_bkgd_hexXXXXXX \n color_card_hex: XXXXXXcolor_card_hexXXXXXX \n si: XXXXXXspecial_image_htmlXXXXXX \n token_quantity: XXXXXXtoken_quantityXXXXXX \n price_in_usd: XXXXXXprice_in_usdXXXXXX \n price_in_eth: XXXXXXprice_in_ethXXXXXX/g' template-html.html 
+sed -i 's/Page saved with SingleFile/country: XXXXXXcountryXXXXXX \n card_group_lookup: XXXXXXcard_group_lookupXXXXXX \n geocords: XXXXXXgeocordsXXXXXX \n event_id: XXXXXXevent_idXXXXXX \n color_bkgd_hex: XXXXXXcolor_bkgd_hexXXXXXX \n color_card_hex: XXXXXXcolor_card_hexXXXXXX \n token_quantity: XXXXXXtoken_quantityXXXXXX \n price_in_usd: XXXXXXprice_in_usdXXXXXX \n price_in_eth: XXXXXXprice_in_ethXXXXXX/g' template-html.html 
 
 # This WORKS!
 # <meta http-equiv="Content-Security-Policy" content="default-src 'none'; font-src 'self' data:; img-src 'self' data: https://*.ipfs.dweb.link; style-src 'unsafe-inline'; media-src 'self' data:; script-src 'unsafe-inline' data:; object-src 'self' data:; frame-src 'self' data:;">
@@ -38,8 +38,8 @@ my_str="<meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'none
 sed -i "s/$tmp_str/$my_str/g" template-html.html
 
 # Color the button!
-tmp_str="href=http\:\/\/marketplace.nft.givebasicneeds.org\/ style=border-radius:50px target=_blank"
-my_str="href=http:\/\/marketplace.nft.givebasicneeds.org\/ style=\"border-radius:50px;background-color:XXXXXXcolor_rarity_hexXXXXXX\" target=\"_blank\""
+tmp_str="href=http\:\/\/marketplace.nfts.givebasicneeds.org\/ style=border-radius:50px target=_blank"
+my_str="href=http:\/\/marketplace.nfts.givebasicneeds.org\/ style=\"border-radius:50px;background-color:XXXXXXcolor_rarity_hexXXXXXX\" target=\"_blank\""
 
 sed -i "s/$tmp_str/$my_str/g" template-html.html
 echo ""
